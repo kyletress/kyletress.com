@@ -6,7 +6,7 @@ activate :autoprefixer do |prefix|
 end
 
 activate :livereload, host: '138.197.200.236'
-
+activate :directory_indexes
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 

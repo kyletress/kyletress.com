@@ -6,6 +6,7 @@ body {
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
     line-height: 1.6;
+    margin-top: 40px;
 }
 
 .container {
@@ -13,4 +14,9 @@ body {
   margin: 0 auto;
 }
 
+nav {
+  a {
+    margin-right: 1rem;
+  }
+}
 
