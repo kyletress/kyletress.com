@@ -9,6 +9,11 @@
     <%= javascript_include_tag "site" %>
   </head>
   <body>
-    <%= yield %>
+    <div class="container">
+      <nav>
+        <%= link_to 'Kyle Tress', '/'%>
+      </nav>
+       <%= yield %>
+    </div>
   </body>
 </html>
