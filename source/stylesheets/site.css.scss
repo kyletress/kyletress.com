@@ -36,6 +36,9 @@ figcaption {
   border: 1px solid #eee;
   border-collapse:collapse;
   font-size: 13px;
+  tr:not(.htr) {
+   counter-increment: rowNumber -1;
+  }
   th {
     text-align: left;
     padding: 5px;
@@ -45,5 +48,9 @@ figcaption {
     padding: 5px;
     border: 1px solid #eee;
     border-bottom: none;
+    &:first-child::before {
+      content: counter(rowNumber);
+      min-width:1em;
+    }
   }
 }
