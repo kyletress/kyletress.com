@@ -54,3 +54,20 @@ figcaption {
     }
   }
 }
+
+footer {
+  font-size: 13px;
+  margin: 1rem 0;
+  color: #999;
+  p {
+    margin: 0;
+  }
+  a {
+    color: #999;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
