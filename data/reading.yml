@@ -1,4 +1,9 @@
 books:
+  - title: "December 2017 - NJ, Germany, Austria"
+  - title: "Mastering Bitcoin"
+    author: "Andreas Antonopoulos"
+  - title: "Storm Before the Storm"
+    author: "Mike Duncan"
   - title: "November 2017 - Tokyo, Lake Placid, Park City, Whistler"
   - title: "Leonardo Da Vinci"
     author: "Walter Isaacson"
