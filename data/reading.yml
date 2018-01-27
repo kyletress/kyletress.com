@@ -1,4 +1,9 @@
 books:
+  - title: "January 2018 - Germany, Switzerland, Houston, Ewing, Korea"
+  - title: "The Best and the Brightest"
+    author: "David Halberstam"
+  - title: "Fire and Fury"
+    author: "Michael Wolff" 
   - title: "December 2017 - NJ, Germany, Austria"
   - title: "Mastering Bitcoin"
     author: "Andreas Antonopoulos"
