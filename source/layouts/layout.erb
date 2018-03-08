@@ -12,12 +12,8 @@
   </head>
   <body>
     <div class="container">
-      <nav>
-        <%= link_to 'Kyle Tress', '/'%>
-        <%= link_to 'About', '/about' %>
-        <%= link_to 'Reading List', '/reading-list' %>
-      </nav>
-       <%= yield %>
+      <%= partial 'partials/header' %>
+      <%= yield %>
     </div>
   </body>
 </html>

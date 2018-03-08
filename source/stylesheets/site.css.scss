@@ -1,4 +1,5 @@
 $container-max-width: 640px;
+$yale-blue--light: #286dc0;
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
@@ -14,10 +15,25 @@ body {
   margin: 0 auto;
 }
 
+
+a {
+  color: $yale-blue--light;
+}
+
 nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
   a {
-    margin-right: .5rem;
+    margin-right: 1rem;
+    font-weight: 500;
+    text-decoration: none;
   }
+}
+
+.avatar {
+  border-radius: 50%;
+  display: block;
 }
 
 figure {
