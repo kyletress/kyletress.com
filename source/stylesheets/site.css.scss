@@ -83,6 +83,16 @@ footer {
   }
 }
 
+footer{
+  a{color:black;}
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding:2rem 0;
+  h4, p {
+    margin: 0;
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;

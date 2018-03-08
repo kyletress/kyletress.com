@@ -1,0 +1,13 @@
+header:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Reading List
+    url: /reading-list
+
+footer:
+  - title: Now
+    url: /now
+  - title: Contact
+    url: /contact
