@@ -1,5 +1,5 @@
-$container-max-width: 640px;
-$yale-blue--light: #286dc0;
+@import 'variables';
+@import 'mixins';
 
 html {
   font-size: 10px;
@@ -37,16 +37,29 @@ a {
   width:100%;
   position:fixed;
   top: 0;
-  padding:1rem;
+  padding:1.5rem;
   display: flex;
-  align-items: center;
-  //justify-content:space-between;
-  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.05);
+  flex-direction: column;
+  //box-shadow: 0 2px 3px 0 rgba(0,0,0,0.05);
+  border-bottom: 1px solid #f1f1f1;
+  @include bp(sm)  {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .logo {
-  order: 1;
-  flex:1;
+  display: none;
+  @include bp(md) {
+    display: block;
+    order: 1;
+    margin-right: .5rem;
+  }
+
+  @include bp(lg) {
+    flex: 1;
+    margin-right: 0;
+  }
 }
 
 .avatar {
@@ -57,23 +70,34 @@ a {
 .brand {
   font-weight: 700;
   color: black;
-  text-align: center;
+  text-align: left;
   order: 2;
-  flex:1;
   font-size: 1.4rem;
   margin-bottom: 0;
   line-height: 1.3;
+  @include bp(md)  {
+    flex: 1;
+  }
+  @include bp(lg) {
+    text-align: center;
+  }
   span {
+    display: none;
     font-size: 1.2rem;
     color: #999;
     font-weight: 400;
+    @include bp(sm) {
+      display:block;
+    }
   }
 }
 
 .main-nav {
   order: 3;
   flex: 1;
-  text-align: right;
+  @include bp(sm) {
+    text-align: right;
+  }
 }
 
 .main-nav a {

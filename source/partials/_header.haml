@@ -1,0 +1,10 @@
+%header.main-header
+  .brand 
+    Kyle Tress
+    %span Olympian. Rails Developer.
+  .logo
+    = link_to "/" do 
+      = image_tag "kyle-tress-headshot-small.jpg", height: "40", width: "40", class: "avatar"
+  %nav.main-nav
+    - data.nav.header.each do |nav|
+      = link_to nav.title, nav.url, class: "active" 
