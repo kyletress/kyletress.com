@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'mixins';
+@import 'layout';
 @import 'header';
 
 html {
@@ -20,19 +21,20 @@ body {
   line-height: 1.6;
   margin: 0;
   padding-top: 70px;
-}
 
+  @include bp(wd) {
+    padding-top: 0;
+  }
+}
 
 .container {
-  max-width: $container-max-width;
-  margin: 0 auto;
+  //max-width: $container-max-width;
+  //margin: 0 auto;
 }
-
 
 a {
   color: $yale-blue--light;
 }
-
 
 figure {
   margin-left: 0;
@@ -73,6 +75,7 @@ footer {
   font-size: 13px;
   margin: 1rem 0;
   color: #999;
+  width: 100%;
   p {
     margin: 0;
   }
@@ -83,7 +86,7 @@ footer {
 
 footer{
   a{color:black;}
-  max-width: $container-max-width;
+  //max-width: $container-max-width;
   margin: 0 auto;
   padding:2rem 0;
   h4, p {

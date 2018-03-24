@@ -1,0 +1,39 @@
+body {
+  display:grid;
+  height: 100vh;
+  grid-template-areas: 
+    "h"
+    "c"
+    "f";
+  @include bp(wd)  {
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "h c"
+      "h f";
+  }
+}
+
+.main-header {
+  position: fixed;
+  grid-area: 'h';
+  @include bp(wd)  {
+    position: static;
+    background: red !important;
+    height: 100%;
+  }  
+}
+
+.container {
+  grid-area: 'c';
+  @include bp(wd)  {
+    background: blue;  
+  }
+}
+
+.main-footer {
+  grid-area: 'f';
+  @include bp(wd)  {
+    background: yellow;
+  }
+}
