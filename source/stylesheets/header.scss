@@ -1,12 +1,14 @@
 .main-header {
   background: rgba(255,255,255,.97);
+  background: #fafafa;
   width:100%;
   top: 0;
   padding:1.5rem;
   display: flex;
   flex-direction: column;
   //box-shadow: 0 2px 3px 0 rgba(0,0,0,0.05);
-  border-bottom: 1px solid #f1f1f1;
+  border-top: 2px solid $yale-blue--light;
+  border-bottom: 1px solid #f1f1f2;
   
   @include bp(sm)  {
     flex-direction: row;
