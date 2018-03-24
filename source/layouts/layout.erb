@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Kyle Tress">
     <title><%= current_page.data.title %> - Kyle Tress</title>
-    <%= partial 'analytics' %>
+    <%= google_analytics_tag if build? %>
     <%= stylesheet_link_tag "site" %>
-    <%= javascript_include_tag "site" %>
   </head>
   <body>
     <div class="container">
