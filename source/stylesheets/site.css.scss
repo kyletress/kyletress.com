@@ -23,6 +23,7 @@ body {
   padding-top: 70px;
 
   @include bp(wd) {
+    border-top: 2px solid $yale-blue--light;
     padding-top: 0;
   }
 }
@@ -72,26 +73,27 @@ figcaption {
 }
 
 footer {
-  font-size: 13px;
-  margin: 1rem 0;
-  color: #999;
   width: 100%;
-  p {
-    margin: 0;
-  }
-  a {
-    color: #999;
-  }
-}
-
-footer{
-  a{color:black;}
-  //max-width: $container-max-width;
-  margin: 0 auto;
-  padding:2rem 0;
-  h4, p {
-    margin: 0;
-  }
+//  font-size: 13px;
+//  margin: 1rem 0;
+//  color: #999;
+//  width: 100%;
+//  p {
+//    margin: 0;
+//  }
+//  a {
+//    color: #999;
+//  }
+//}
+//
+//footer{
+//  a{color:black;}
+//  //max-width: $container-max-width;
+//  margin: 0 auto;
+//  padding:2rem 0;
+//  h4, p {
+//    margin: 0;
+//  }
 }
 
 img {

@@ -1,4 +1,5 @@
-body {
+.grid {
+  grid-gap: 2rem;
   display:grid;
   height: 100vh;
   grid-template-areas: 
@@ -16,24 +17,28 @@ body {
 
 .main-header {
   position: fixed;
-  grid-area: 'h';
+  grid-area: h;
   @include bp(wd)  {
     position: static;
-    background: red !important;
     height: 100%;
   }  
 }
 
 .container {
-  grid-area: 'c';
+  grid-area: c;
+  max-width: $container-max-width;
+  width: 90%;
+  margin: 0 auto;
   @include bp(wd)  {
-    background: blue;  
+    margin: 0;
+    padding: 4rem;
+    max-width: 800px;
+    font-size: 1.8rem;
   }
 }
 
 .main-footer {
-  grid-area: 'f';
+  grid-area: f;
   @include bp(wd)  {
-    background: yellow;
   }
 }
