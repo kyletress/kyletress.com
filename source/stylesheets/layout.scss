@@ -17,6 +17,7 @@
 
 .main-header {
   position: fixed;
+  top: 0;
   grid-area: h;
   @include bp(wd)  {
     position: static;

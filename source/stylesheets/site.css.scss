@@ -1,52 +1,9 @@
 @import 'variables';
 @import 'mixins';
+@import 'base';
 @import 'layout';
 @import 'header';
 
-html {
-  font-size: 10px;
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding-top: 70px;
-
-  @include bp(wd) {
-    border-top: 2px solid $yale-blue--light;
-    padding-top: 0;
-  }
-}
-
-.container {
-  //max-width: $container-max-width;
-  //margin: 0 auto;
-}
-
-a {
-  color: $yale-blue--light;
-}
-
-figure {
-  margin-left: 0;
-  margin-right:0;
-}
-
-figcaption {
-  font-size: 12px;
-  color: rgba(0,0,0,.35);
-  text-align:right;
-}
 
 .table {
   width: 100%;
@@ -96,7 +53,3 @@ footer {
 //  }
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}

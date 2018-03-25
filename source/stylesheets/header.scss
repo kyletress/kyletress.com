@@ -1,24 +1,21 @@
 .main-header {
-  background: rgba(255,255,255,.97);
   background: rgba(249,249,249,.97);
-  width:100%;
-  top: 0;
-  padding:1.5rem;
+  border-top: 2px solid $yale-blue--light;
+  border-bottom: 1px solid #f1f1f2;
   display: flex;
   flex-direction: column;
-  //box-shadow: 0 2px 3px 0 rgba(0,0,0,0.05);
-  border-bottom: 1px solid #f1f1f2;
-  border-top: 2px solid $yale-blue--light;
+  padding:1.5rem;
+  width:100%;
+
   @include bp(sm)  {
-    flex-direction: row;
     align-items: center;
+    flex-direction: row;
   }
 
   @include bp(wd)  {
     border: none;
     border-right: 1px solid #f1f1f2;
     flex-direction: column;
-    //align-items: flex-start;
   }
 
 }
@@ -71,7 +68,6 @@
   }
 
   @include bp(md)  {
-    order: 2;
     flex: 1;
   }
 
@@ -87,12 +83,12 @@
 
 .main-header__tagline {
   display: none;
-  font-size: 1.2rem;
-  color: #999;
-  font-weight: 400;
 
   @include bp(sm) {
     display:block;
+    font-size: 1.2rem;
+    color: #999;
+    font-weight: 400;
   }
 
   @include bp(wd) {
@@ -102,23 +98,40 @@
 }
 
 .main-nav {
-  
+  display: flex;
+
   @include bp(sm) {
     text-align: right;
     order: 3;
     flex: 1;
   }
+
+  @include bp(sm)  {
+    justify-content: flex-end;
+  }
+
+  @include bp(wd)  {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align:center;
+  }
 }
 
-.main-nav a {
+.main-nav__link {
     margin-right: 1rem;
     font-weight: 500;
     text-decoration: none;
     font-size: 1.3rem;
     color: black;
     padding:.5rem 0;
+
     &.active {
       border-bottom: 2px solid orange;
+    }
+
+    @include bp(wd) {
+      font-size: 1.6rem;
+      margin-right: 0;
     }
 }
 
