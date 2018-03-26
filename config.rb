@@ -6,6 +6,7 @@ activate :autoprefixer do |prefix|
 end
 
 activate :livereload, host: '138.197.200.236'
+activate :sprockets
 activate :directory_indexes
 activate :google_analytics do |ga|
   ga.tracking_id = 'UA-1619676-7' # Replace with your property ID.
