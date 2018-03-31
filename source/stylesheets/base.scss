@@ -15,7 +15,6 @@ body {
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding-top: 70px;
 
   @include bp(wd) {
     border-top: 2px solid $yale-blue--light;
@@ -41,4 +40,28 @@ figcaption {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.table {
+  width: 100%;
+  border: 1px solid #eee;
+  border-collapse:collapse;
+  font-size: 13px;
+  tr:not(.htr) {
+   counter-increment: rowNumber -1;
+  }
+  th {
+    text-align: left;
+    padding: 5px;
+    background: #eee;
+  }
+  td {
+    padding: 5px;
+    border: 1px solid #eee;
+    border-bottom: none;
+    &:first-child::before {
+      content: counter(rowNumber);
+      min-width:1em;
+    }
+  }
 }

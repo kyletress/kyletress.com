@@ -3,10 +3,6 @@ header:
     url: /
   - title: About
     url: /about
-  - title: Essays
-    url: /essays
-  - title: Photos
-    url: /photos
   - title: Reading List
     url: /reading-list
 

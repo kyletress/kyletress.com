@@ -5,7 +5,7 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-activate :livereload, host: '138.197.200.236'
+activate :livereload#, host: '138.197.200.236'
 activate :directory_indexes
 activate :google_analytics do |ga|
   ga.tracking_id = 'UA-1619676-7' # Replace with your property ID.

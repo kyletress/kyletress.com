@@ -1,10 +1,8 @@
 %header.main-header
-  .main-header__wordmark 
-    Kyle Tress
-    %span.main-header__tagline Olympian. Rails Developer.
-  .main-header__logo
+  .logo
+    = link_to "Kyle Tress", "/", class: "logo__wordmark"
     = link_to "/" do 
-      = image_tag "kyle-tress-headshot-small.jpg", class: "main-header__avatar"
+      = image_tag "kyle-tress-headshot-small.jpg", class: "logo__avatar"
   %nav.main-nav
     - data.nav.header.each do |nav|
       = link_to nav.title, nav.url, class: "main-nav__link" 
