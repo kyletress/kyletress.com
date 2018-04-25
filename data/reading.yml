@@ -1,34 +1,36 @@
 books:
-  - title: "April 2018 - Wildwood Crest, Ewing, Chicago"
+  - title: "April 2018 - Wildwood Crest, Ewing, Chicago, Key West"
+  - title: "My Life with Bob"
+    author: Pamela Paul
   - title: "On Grand Strategy"
-    author: "John Lewis Gaddis"
+    author: John Lewis Gaddis
   - title: "March 2018 - Ewing, San Francisco, Wildwood Crest"
   - title: "The Hidden-Hand Presidency: Eisenhower as Leader"
-    author: "Fred I. Greenstein"
+    author: Fred I. Greenstein
   - title: "Conspiracy: Peter Thiel, Hulk Hogan, Gawker, and the Anatomy of Intrigue"
-    author: "Ryan Holiday"
-  - title: "February 2018 - Korea, New Jersey"
+    author: Ryan Holiday
+  - title: "February 2018 - Korea, Ewing"
   - title: "The Subtle Art of Not Giving A F*ck"
-    author: "Mark Manson"
+    author: Mark Manson
   - title: "First in his class: A biography of Bill Clinton"
-    author: "David Maraniss"
+    author: David Maraniss
   - title: "January 2018 - Germany, Switzerland, Houston, Ewing, Korea"
   - title: "The Best and the Brightest"
-    author: "David Halberstam"
+    author: David Halberstam
   - title: "Fire and Fury"
-    author: "Michael Wolff" 
-  - title: "December 2017 - NJ, Germany, Austria"
+    author: Michael Wolff 
+  - title: "December 2017 - Ewing, Germany, Austria"
   - title: "Mastering Bitcoin"
-    author: "Andreas Antonopoulos"
+    author: Andreas Antonopoulos
   - title: "Storm Before the Storm"
-    author: "Mike Duncan"
+    author: Mike Duncan
   - title: "November 2017 - Tokyo, Lake Placid, Park City, Whistler"
   - title: "Leonardo Da Vinci"
-    author: "Walter Isaacson"
+    author: Walter Isaacson
   - title: "Origin"
-    author: "Dan Brown"
+    author: Dan Brown
   - title: "October 2017 - Calgary, Lake Placid, Ewing"
   - title: "World Without Mind: The Existential Threat of Big Tech"
-    author: "Franklin Foer"
+    author: Franklin Foer
   - title: "The Bridge: The Life and Rise of Barack Obama"
-    author: "David Remnick"
+    author: David Remnick
