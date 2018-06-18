@@ -1,38 +1,23 @@
 .grid {
-  grid-gap: 2rem;
+  //grid-gap: 2rem;
   display:grid;
   height: 100vh;
-  grid-template-areas: 
+  grid-template-areas:
     "h"
     "c"
     "f";
   grid-template-rows: auto 1fr auto;
-  @include bp(wd)  {
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr auto;
-    grid-template-areas:
-      "h c"
-      "h f";
-  }
+  max-width: $container-max-width;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .main-header {
   grid-area: h;
-  @include bp(wd)  {
-    height: 100%;
-  }  
 }
 
 .container {
   grid-area: c;
-  max-width: $container-max-width;
-  width: 90%;
-  margin: 0 auto;
-  padding-bottom: 1rem; // looks like there's an occasional grid-gap bug in safari.
-  @include bp(wd)  {
-    margin: 0;
-    padding: 2rem;
-  }
 }
 
 .main-footer {

@@ -1,0 +1,28 @@
+.table {
+  width: 100%;
+  border: 1px solid #eee;
+  border-collapse:collapse;
+  font-size: 12px;
+  counter-reset: rowNumber;
+  tr:not(.htr) {
+   counter-increment: rowNumber -1;
+  }
+  th {
+    text-align: left;
+    padding: 5px;
+    background: #eee;
+  }
+  td {
+    padding: 5px;
+    border: 1px solid #eee;
+    border-bottom: none;
+    &:first-child {
+      background:#eee;
+      font-weight: bold;
+    }
+    &:first-child::before {
+      content: counter(rowNumber)".";
+      min-width:1em;
+    }
+  }
+}

@@ -11,9 +11,10 @@ title: Skeleton faqs
       %li
         = link_to faq.q, "##{faq.q.parameterize}"
 
-- data.faqs.each do |f|
-  - f.faqs.each do |faq|
-    = content_tag :h4, id: faq.q.parameterize do
-      = faq.q
-      = link_to "&#8593;", "#"
-    = faq.a
+%dl
+  - data.faqs.each do |f|
+    - f.faqs.each do |faq|
+      = content_tag :dt, id: faq.q.parameterize do
+        = faq.q
+        = link_to "&#8593;", "#"
+      %dd= faq.a
