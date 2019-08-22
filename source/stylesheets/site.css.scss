@@ -1,5 +1,63 @@
-$container-max-width: 640px;
-$yale-blue--light: #286dc0;
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir","Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans","Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-@import 'layout';
-@import 'masthead';
+:root {
+  --background: rgb(242,242,247);
+  --text-color: rgb(28,28,30);
+  --secondary-color: rgb(0,122,255)
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: rgb(28,28,30);
+    --text-color: rgb(242,242,247);
+    --secondary-color: rgb(100,210,255)
+  }
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.4rem;
+  text-align: center;
+  background: var(--background);
+  color: var(--text-color);
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir","Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans","Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  
+  @media (min-width: 600px) {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 90%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+p {
+  color: var(--secondary-color);
+}
+
+.mast {
+  margin-bottom: 2rem;
+}
+
+nav {
+  font-size: 1.4rem;
+  a {
+    color: rgb(142,142,147);
+  }
+}
