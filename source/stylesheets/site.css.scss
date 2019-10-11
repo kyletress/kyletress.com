@@ -1,14 +1,14 @@
 :root {
   --background: rgb(242,242,247);
-  --text-color: rgb(28,28,30);
-  --secondary-color: rgb(0,122,255)
+  --text-color: black;
+  --secondary-color: black;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: rgb(28,28,30);
-    --text-color: rgb(242,242,247);
-    --secondary-color: rgb(100,210,255)
+    --text-color: white;
+    --secondary-color: white;
   }
 }
 
@@ -25,7 +25,8 @@ body {
   text-align: center;
   background: var(--background);
   color: var(--text-color);
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir","Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans","Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  font-family: 'SFMono-Regular',courier, monospace;
+  //font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir","Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans","Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   
   @media (min-width: 600px) {
     font-size: 1.6rem;
@@ -48,6 +49,7 @@ h1{
 }
 
 p {
+  margin: 5px 0;
   color: var(--secondary-color);
 }
 
@@ -55,9 +57,10 @@ p {
   margin-bottom: 2rem;
 }
 
-nav {
-  font-size: 1.4rem;
-  a {
-    color: rgb(142,142,147);
-  }
+a {
+  color: rgb(142,142,147);
+}
+
+.bold {
+  font-weight: bold;
 }
