@@ -5,7 +5,7 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-activate :livereload#, host: '138.197.200.236'
+activate :livereload 
 activate :directory_indexes
 
 # Per-page layout changes
