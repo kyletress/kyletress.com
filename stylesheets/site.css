@@ -1,0 +1,53 @@
+:root {
+  --background: rgb(255,255,255);
+  --text-color: rgb(44,44,46);
+  --yale-blue: rgb(0, 53, 107);
+  --text-header-color: rgb(28,28,30);
+  --link-color: rgb(0,122,255);
+  --link-color-visited: rgb(175,82,222); }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: rgb(44,44,46);
+    --text-color: rgb(142,142,147);
+    --text-header-color: rgb(255,255,255);
+    --link-color: rgb(10,132,255);
+    --link-color-visited: rgb(191,90,242); } }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+  font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
+  margin: 0; }
+
+h1, h2, h3, h4 {
+  color: var(--text-header-color); }
+
+a:link {
+  color: var(--link-color); }
+
+a:visited {
+  color: var(--link-color-visited); }
+
+main {
+  width: 92%;
+  max-width: 700px;
+  margin: 0 auto; }
+
+.masthead h1 {
+  font-weight: 400;
+  font-size: 24px;
+  margin: 24px 0; }
+
+.masthead strong {
+  font-weight: 600; }
